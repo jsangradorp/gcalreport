@@ -4,6 +4,11 @@ from googleapiclient.discovery import build
 from httplib2 import Http
 from oauth2client import file, client, tools
 
+# encoding=utf8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 # File copied mercilessly from
 # https://developers.google.com/calendar/quickstart/python
 
