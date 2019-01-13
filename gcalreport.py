@@ -35,7 +35,7 @@ def main():
     today = (datetime.datetime.utcnow().date()).isoformat() + 'T00:00:00.000Z' # 'Z' indicates UTC time
     yesterday = (datetime.datetime.utcnow().date() - datetime.timedelta(1)).isoformat() + 'T00:00:00.000Z' # 'Z' indicates UTC time
     events_result = service.events().list(calendarId='primary', timeMin=yesterday, timeMax=today,
-                                        maxResults=10, singleEvents=True,
+                                        maxResults=100, singleEvents=True,
                                         orderBy='startTime').execute()
     events = events_result.get('items', [])
 
