@@ -43,8 +43,8 @@ def main():
                                         orderBy='startTime').execute()
     events = events_result.get('items', [])
 
-    if not events:
-        print('No events found.')
+    # if not events:
+    #     print('No events found.')
     for event in events:
         # start = event['start'].get('dateTime', event['start'].get('date'))
         # print(start, event['summary'])
