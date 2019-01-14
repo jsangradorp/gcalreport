@@ -11,6 +11,10 @@ sys.setdefaultencoding('utf8')
 
 # File copied mercilessly from
 # https://developers.google.com/calendar/quickstart/python
+#
+# Need:
+#
+# pip install --upgrade google-api-python-client oauth2client
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/calendar.readonly'
